@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+button {
+  border: none;
+}
+
+section {
+  margin-bottom: 94px;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    margin-bottom: 60px;
+  }
+  .container {
+    max-width: 400px;
+  }
+}
+
+:root {
+  --main-color: #2196f3;
+  --text-color: #757575;
+  --title-color: #212121;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.textaria {
+  resize: none;
+  outline: none;
+}
